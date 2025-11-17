@@ -1,0 +1,132 @@
+{
+    "name": "ciu32f003_template",
+    "target": "Debug",
+    "toolchain": "AC6",
+    "toolchainLocation": "D:\\software\\install\\keil543\\ARM\\ARMCLANG",
+    "toolchainCfgFile": "c:\\Users\\16174\\.vscode\\extensions\\cl.eide-3.26.1\\res\\data\\models/arm.v6.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 24,
+    "rootDir": "d:\\project\\template\\ciu32f003_template",
+    "dumpPath": "build\\Debug",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        ".",
+        "Vendor_Library/CIU32F003_Lib/Include",
+        "Vendor_Library/CMSIS/Device",
+        "Vendor_Library/CMSIS/Core",
+        "Project_Source",
+        "Project_Source/Drivers",
+        ".cmsis/libdsp/include",
+        ".cmsis/include",
+        "Project_Source/Application",
+        "Project_Source/Core"
+    ],
+    "libDirs": [
+        "Vendor_Library/CIU32F003_Lib/Include",
+        "Vendor_Library/CIU32F003_Lib/Source",
+        "Vendor_Library/CMSIS/Core",
+        "Vendor_Library/CMSIS/Device",
+        ".cmsis/libdsp/lib",
+        ".cmsis/libdsp/lib/arm"
+    ],
+    "defines": [
+        "CIU32F003"
+    ],
+    "sourceList": [
+        "Project_Source/Application/app_config_repo.c",
+        "Project_Source/Core/main.c",
+        "Project_Source/Drivers/drv_clock.c",
+        "Project_Source/Drivers/drv_flash.c",
+        "Project_Source/Drivers/drv_led.c",
+        "Project_Source/Drivers/lib_flash_jpa.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_adc.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_comp.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_crc.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_exti.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_flash.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_gpio.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_i2c.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_lptim.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_pmu.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_rcc.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_spi.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_tim.c",
+        "Vendor_Library/CIU32F003_Lib/Source/ciu32f003_std_uart.c",
+        "Vendor_Library/CMSIS/Device/Startup/arm/startup_ciu32f003.s",
+        "Vendor_Library/CMSIS/Device/Startup/arm/startup_ciu32f003.s",
+        "Vendor_Library/CMSIS/Device/system_ciu32f003.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 3,
+        "afterBuildTasks": [
+            {
+                "name": "axf to elf",
+                "command": "axf2elf -d \"${ToolchainRoot}\" -i \"${OutDir}/${ProjectName}.axf\" -o \"${OutDir}/${ProjectName}.elf\" > \"${OutDir}/axf2elf.log\""
+            }
+        ],
+        "asm-compiler": {
+            "$use": "asm-auto"
+        },
+        "beforeBuildTasks": [],
+        "c/cpp-compiler": {
+            "language-c": "c99",
+            "language-cpp": "c++11",
+            "one-elf-section-per-function": true,
+            "optimization": "level-0",
+            "short-enums#wchar": true,
+            "warnings": "ac5-like-warnings"
+        },
+        "global": {
+            "output-debug-info": "enable",
+            "use-microLIB": true,
+            "microcontroller-cpu": "cortex-m0+",
+            "microcontroller-fpu": "cortex-m0+",
+            "microcontroller-float": "cortex-m0+",
+            "$arch-extensions": "",
+            "$clang-arch-extensions": "",
+            "$armlink-arch-extensions": ""
+        },
+        "linker": {
+            "$outputTaskExcludes": [
+                ".bin"
+            ],
+            "misc-controls": "--diag_suppress=L6329",
+            "output-format": "elf",
+            "ro-base": "0x00000000",
+            "rw-base": "0x20000000",
+            "link-scatter": [
+                "d:/project/template/ciu32f003_template/MDK-ARM/Objects/Debug/MyProject.sct"
+            ]
+        }
+    },
+    "env": {
+        "KEIL_OUTPUT_DIR": "Objects\\Debug",
+        "workspaceFolder": "d:\\project\\template\\ciu32f003_template",
+        "workspaceFolderBasename": "ciu32f003_template",
+        "OutDir": "d:\\project\\template\\ciu32f003_template\\build\\Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Debug",
+        "ProjectName": "ciu32f003_template",
+        "ConfigName": "Debug",
+        "ProjectRoot": "d:\\project\\template\\ciu32f003_template",
+        "ExecutableName": "d:\\project\\template\\ciu32f003_template\\build\\Debug\\ciu32f003_template",
+        "ChipPackDir": "",
+        "ChipName": "",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\16174\\.vscode\\extensions\\cl.eide-3.26.1\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.1.1",
+        "EIDE_MSYS": "C:\\Users\\16174\\.eide\\bin\\builder\\msys\\bin",
+        "EIDE_PY3_CMD": "C:\\Users\\16174\\.eide\\bin\\python36\\python3.exe",
+        "ToolchainRoot": "D:\\software\\install\\keil543\\ARM\\ARMCLANG"
+    },
+    "sysPaths": []
+}

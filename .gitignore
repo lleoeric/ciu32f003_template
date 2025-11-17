@@ -1,0 +1,72 @@
+# Keil MDK Build Output and User Settings
+# -----------------------------------------------
+# Build output directories
+/MDK-ARM/Objects/
+/MDK-ARM/Listings/
+/MDK-ARM/DebugConfig/
+/MDK-ARM/RTE/
+/doc/
+# User-specific settings
+*.uvguix.*
+*.uvoptx
+*.scvd
+*.bak
+EventRecorderStub.scvd
+*.idea/
+
+# Intermediate build files
+*.o
+*.d
+*.crf
+*.lst
+*.map
+*.dep
+*.lnp
+*.iex
+
+# Output binary files
+*.axf
+*.hex
+*.bin
+*.elf
+
+# Debug and trace files
+JLinkLog.txt
+JLinkSettings.ini
+*.dbgconf
+*.log
+*.tra
+
+# Operating System and Editor Files
+# -----------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Visual Studio Code
+.vscode/
+.vs/
+*.code-workspace
+
+# Temporary Files
+# -----------------------------------------------
+*.swp
+*.tmp
+*~
+
+# Version Control System
+# -----------------------------------------------
+.svn/
+CVS/
+
+# Project Specific
+# -----------------------------------------------
+# Add any project-specific files or folders to ignore

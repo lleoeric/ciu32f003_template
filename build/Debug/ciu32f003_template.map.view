@@ -1,0 +1,6 @@
+tool: AC6
+fileName: 'ciu32f003_template.map'
+elfName: 'ciu32f003_template.axf'
+compilerName: 'ARMCLANG 6'
+compilerFullName: 'ARMCLANG 6'
+compilerPath: 'D:\software\install\keil543\ARM\ARMCLANG\bin\armclang.exe'
