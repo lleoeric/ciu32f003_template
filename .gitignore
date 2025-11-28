@@ -5,7 +5,7 @@
 /MDK-ARM/Listings/
 /MDK-ARM/DebugConfig/
 /MDK-ARM/RTE/
-/doc/
+/doc/*
 # User-specific settings
 *.uvguix.*
 *.uvoptx

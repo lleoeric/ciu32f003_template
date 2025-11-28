@@ -7,7 +7,7 @@
     "buildMode": "fast|multhread",
     "showRepathOnLog": true,
     "threadNum": 24,
-    "rootDir": "d:\\project\\template\\ciu32f003_template",
+    "rootDir": "d:\\Dev_Workspace\\Studio\\Libs\\ciu32f003_template",
     "dumpPath": "build\\Debug",
     "outDir": "build\\Debug",
     "incDirs": [
@@ -99,21 +99,21 @@
             "ro-base": "0x00000000",
             "rw-base": "0x20000000",
             "link-scatter": [
-                "d:/project/template/ciu32f003_template/MDK-ARM/Objects/Debug/MyProject.sct"
+                "d:/Dev_Workspace/Studio/Libs/ciu32f003_template/MDK-ARM/Objects/Debug/MyProject.sct"
             ]
         }
     },
     "env": {
         "KEIL_OUTPUT_DIR": "Objects\\Debug",
-        "workspaceFolder": "d:\\project\\template\\ciu32f003_template",
+        "workspaceFolder": "d:\\Dev_Workspace\\Studio\\Libs\\ciu32f003_template",
         "workspaceFolderBasename": "ciu32f003_template",
-        "OutDir": "d:\\project\\template\\ciu32f003_template\\build\\Debug",
+        "OutDir": "d:\\Dev_Workspace\\Studio\\Libs\\ciu32f003_template\\build\\Debug",
         "OutDirRoot": "build",
         "OutDirBase": "build\\Debug",
         "ProjectName": "ciu32f003_template",
         "ConfigName": "Debug",
-        "ProjectRoot": "d:\\project\\template\\ciu32f003_template",
-        "ExecutableName": "d:\\project\\template\\ciu32f003_template\\build\\Debug\\ciu32f003_template",
+        "ProjectRoot": "d:\\Dev_Workspace\\Studio\\Libs\\ciu32f003_template",
+        "ExecutableName": "d:\\Dev_Workspace\\Studio\\Libs\\ciu32f003_template\\build\\Debug\\ciu32f003_template",
         "ChipPackDir": "",
         "ChipName": "",
         "SYS_Platform": "win32",
